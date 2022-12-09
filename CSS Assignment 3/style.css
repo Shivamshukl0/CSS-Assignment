@@ -59,6 +59,7 @@ body{
             left: 500px;
             font-size: 20px;
             padding: 10px;
+            z-index: 2;
 }
 #box3{
     background-image: url("./Media/delivery.jpg");
