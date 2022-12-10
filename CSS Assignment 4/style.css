@@ -66,8 +66,9 @@ body{
         padding: 10px;
 }
 .parent{
-        display: grid;
-            grid-template-rows: 69px 102px 140px;
+    display: grid;
+        grid-template-columns: repeat(3, 30%) 10%;
+        grid-template-rows: 80px 124px 114px;
 }
 .heading1{
     /* background-color: brown;
@@ -126,6 +127,11 @@ body{
 }
 .d{
     background: black;
+        grid-row: 2/4;
+        grid-column: 4/5;
+        font-size: 11px;
+        padding-right: 5px;
+        font-weight: 700;
 }
 .e{
         grid-column: 1/4;
