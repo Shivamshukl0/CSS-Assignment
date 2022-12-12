@@ -96,10 +96,10 @@ section{
    /* align-items: center; */
    align-items: center;
    margin:auto;
-padding-right: 120px;
+/* padding-right: 120px; */
 }
 .sahara{
-padding-right: 70px;
+/* padding-right: 70px; */
 }
 .box{
     width: 400px;
@@ -114,7 +114,7 @@ padding-right: 70px;
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
 }
-.box:hover{
+.box1:hover{
  box-sizing: 0px 0px 3px;
 }
 .logo{
@@ -122,6 +122,6 @@ padding-right: 70px;
             padding-top: 10px;
 }
 nav{
-        padding-right: 137px;
+        /* padding-right: 137px; */
 }
 }
