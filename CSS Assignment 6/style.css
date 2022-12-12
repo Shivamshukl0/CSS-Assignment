@@ -1,0 +1,127 @@
+section{
+background-image: url("./Media/shara\ desert.jpg");
+height: 720px;
+}
+li{
+    padding: 5px;
+        margin-top: 24px;
+        display: inline-block;
+        float: right;
+        padding-right: 45px;
+}
+.link{
+    font-size: 20px;
+        text-decoration: none;
+        margin: 5px;
+        display: block;
+        /* border: 2px solid; */
+}
+.logo{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.parent{
+    display: grid;
+        grid-template-columns: 750px 200px 200px;
+        gap: 50px;
+        grid-template-rows: 250px 250px;
+}
+p{
+    font-size: 10px;
+}
+.sahara{
+    grid-row-start: 1;
+        grid-row-end: 3;
+        text-align: center;
+        /* padding-top: 100px; */
+        color: white;
+}
+h1{
+    font-size: 100px;
+}
+.explore{
+        text-decoration: none;
+            background-color: white;
+            display: block;
+            text-align: center;
+            width: 120px;
+            height: 33px;
+            margin: auto;
+            padding-top: 15px;
+            color: black;
+            border-radius: 10px;
+}
+.box{
+    border-radius: 10px;
+        text-align: center;
+        color: white;
+        background-size: cover;
+        transition: .3s;
+}
+.box:hover{
+    box-shadow: 0px 0px 3px;
+    margin-top: -10px;
+}
+.box1{
+background-image: url(./Media/pic-1.png);
+}
+.box2{
+background-image: url(./Media/pic-2.png);
+}
+.box3{
+background-image: url(./Media/pic-3.png);
+}
+.box4{
+background-image: url(./Media/pic-4.png);
+}
+@media only screen and (max-width:700px) {
+section{
+    background-size: contain;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+
+}
+.link{
+/* padding-right: 60px; */
+}
+/* p{
+    font-size: 5px;
+} */
+.parent{
+    display: block;
+    width: 80%;
+    /* grid-template-columns: 50%; */
+   /* gap: 50px; */
+   /* align-items: center; */
+   align-items: center;
+   margin:auto;
+padding-right: 120px;
+}
+.sahara{
+padding-right: 70px;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 2rem;
+    transition: .3s;
+}
+.box1{
+    /* background-image: url(./Media/pic-1.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+}
+.box:hover{
+ box-sizing: 0px 0px 3px;
+}
+.logo{
+        padding-left: 6px;
+            padding-top: 10px;
+}
+nav{
+        padding-right: 137px;
+}
+}
