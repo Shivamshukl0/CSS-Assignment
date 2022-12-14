@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(226, 226, 77);
+}
+.screen1{
+
+}
+.heading {
+        font-size: 30px;
+    font-weight: bolder;
+}
+.box{
+    display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  margin: 10px;
+}
+.box1{
+animation-name: demo;
+animation-duration: 5s;
+}
+@keyframes demo{
+    
+}
+.box2{
+
+}
+
