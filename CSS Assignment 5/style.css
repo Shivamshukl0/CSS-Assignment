@@ -1,28 +1,333 @@
 body {
-  background-color: rgb(226, 226, 77);
+  /* background-color: rgb(226, 226, 77); */
+  margin: 0;
+  /* border-right: 3px solid yellow; */
+  border-left: 10px solid;
+  border-color: white green white orange;
+  padding: 0;
+
 }
 .screen1{
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .heading {
         font-size: 30px;
     font-weight: bolder;
 }
-.box{
+/* .box{
     display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: brown;
-  margin: 10px;
-}
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 10px;
+} */
 .box1{
-animation-name: demo;
-animation-duration: 5s;
+      display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(96, 96, 190);
+    margin: 20px;
+    animation: demo 2s infinite alternate-reverse;
 }
-@keyframes demo{
-    
+@keyframes demo {
+   0%{
+        transform: skewX(20deg);
+   } 
+   100%{
+        transform: skewX(-20deg);
+   }
 }
 .box2{
-
+     display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(92, 90, 90);
+    margin: 20px;
+ animation: skewy 2s infinite alternate-reverse;
 }
+@keyframes skewy {
+   0%{
+        transform: skewy(20deg);
+   } 
+   100%{
+        transform: skewy(-20deg);
+   }
+  }
+  .box3{
+     display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(78, 78, 134);
+    margin: 20px;
+ animation: rotate 3s infinite;
+}
+@keyframes rotate {
+   0%{
+        transform: rotate(0deg);
+   } 
+   100%{
+        transform: rotate(360deg);
+   }
+  }
+  .box4{
+     display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(206, 99, 99);
+    margin: 20px;
+ animation: rotatex 3s infinite;
+}
+@keyframes rotatex {
+   0%{
+        transform: rotatex(0deg);
+   } 
+   100%{
+        transform: rotatex(180deg);
+   }
+  }
+  .box5{
+     display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 20px;
+ animation: rotatey 3s infinite;
+}
+@keyframes rotatey {
+   0%{
+        transform: rotatey(0deg);
+   } 
+   100%{
+        transform: rotatey(180deg);
+   }
+  }
+  .box6{
+     display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(112, 212, 112);
+    margin: 20px;
+ animation: rotateR 3s infinite alternate-reverse;
+}
+@keyframes rotateR {
+   0%{
+        transform: rotate(0deg);
+   } 
+   100%{
+        transform: rotate(180deg);
+   }
+  }
+  .screen2{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link{
+    font-size: 25px;
+    color: blueviolet;
+    margin: 20px;
+  }
+  .width{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+  }
+  .width:hover{
+    width: 500px;
+  }
+  .wheight{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+  }
+  .wheight:hover{
+    width: 300px;
+    height: 300px;
 
+  }
+  .linear{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+    transition-timing-function: linear;
+  }
+  .linear:hover{
+    width: 500px;
+   /* transition-timing-function: linear; */
+   }
+  .ease{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+    transition-timing-function: ease;
+  }
+  .ease:hover{
+     width: 500px;
+    /* transition-timing-function: ease; */
+  }
+  .easein{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+    transition-timing-function: ease-in;
+  }
+  .easein:hover{
+    width: 500px;
+    /* transition-timing-function: ease-in; */
+  }
+  .easeout{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+    transition-timing-function: ease-out;
+  }
+  .easeout:hover{
+    width: 500px;
+    /* transition-timing-function: ease-out; */
+  }
+  .easeinout{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition-duration: 3s;
+    margin: 20px;
+    transition-timing-function: ease-in-out;
+  }
+  .easeinout:hover{
+     width: 500px;
+    /* transition-timing-function: ease-in-out; */
+  }
+body{
+    margin:0;
+    padding:0;
+    border:15px solid;
+    border-color: white green white orange;
+}
+.sky{
+    background-image: url(./media/sky.jpg);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .building{
+    background-image: url(./media/city.png);
+    width: 200%;
+    height: 247px;
+    position: absolute;
+    top: 150px;
+    animation: building 15s linear infinite;
+    overflow-x: hidden;
+  }
+
+@keyframes building {
+   100%{
+        transform: translateX(-1000px);
+   }
+  }
+  .road{
+      position: absolute;
+    top: 396px;
+    height: 300px;
+    width: 500%;
+    animation: road 10s linear infinite ;
+    overflow: hidden;
+    background-image: url(./media/road.jpg);
+    overflow-x: hidden;
+  }
+  @keyframes road {
+   100%{
+     transform: translateX(-1000px);
+   }
+  }
+  .car{
+        width: 523px;
+    height: 237px;
+    background-image: url(./media/car.png);
+    position: absolute;
+    top: 270px;
+    left: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .wheel1{
+      width: 91px;
+    height: 91px;
+    background-image: url(./media/wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 387px;
+    left: 347px;
+    animation: wheel 1s linear infinite;
+  }
+  .wheel2{
+    width: 91px;
+    height: 91px;
+    background-image: url(./media/wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 387px;
+    left: 669px;
+    animation: wheel 1s linear infinite;
+  }
+    @keyframes wheel {
+   0%{
+            transform: rotate(0deg);
+   } 
+   100%{
+            transform: rotate(360deg);
+   }
+  }
+  .flag{
+      background-image: url(./media/flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 159px;
+    height: 153px;
+    position: absolute;
+    left: 683px;
+    top: 228px;
+  }
+  .sun{
+      background-image: url(./media/sun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 1200px;
+    animation: sun 200s linear infinite;
+  }
+    @keyframes sun {
+   0%{
+            top: 60px;
+    left: 1200px;
+   } 
+   100%{
+            top: 60px;
+    left: 0px;
+   }
+  }
+  /* .animation{
+        border-left: 6px solid yellow;
+    border-right: 6px solid green;
+  }
