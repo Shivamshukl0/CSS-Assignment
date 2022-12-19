@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding:0;
+    border:15px solid;
+    border-color: white green white orange;
+}
+.sky{
+    background-image: url(./media/sky.jpg);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .building{
+    background-image: url(./media/city.png);
+    width: 200%;
+    height: 247px;
+    position: absolute;
+    top: 150px;
+    animation: building 15s linear infinite;
+    overflow-x: hidden;
+  }
+
+@keyframes building {
+   100%{
+        transform: translateX(-1000px);
+   }
+  }
+  .road{
+      position: absolute;
+    top: 396px;
+    height: 300px;
+    width: 500%;
+    animation: road 10s linear infinite ;
+    overflow: hidden;
+    background-image: url(./media/road.jpg);
+    overflow-x: hidden;
+  }
+  @keyframes road {
+   100%{
+     transform: translateX(-1000px);
+   }
+  }
+  .car{
+        width: 523px;
+    height: 237px;
+    background-image: url(./media/car.png);
+    position: absolute;
+    top: 270px;
+    left: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .wheel1{
+      width: 91px;
+    height: 91px;
+    background-image: url(./media/wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 387px;
+    left: 347px;
+    animation: wheel 1s linear infinite;
+  }
+  .wheel2{
+    width: 91px;
+    height: 91px;
+    background-image: url(./media/wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 387px;
+    left: 669px;
+    animation: wheel 1s linear infinite;
+  }
+    @keyframes wheel {
+   0%{
+            transform: rotate(0deg);
+   } 
+   100%{
+            transform: rotate(360deg);
+   }
+  }
+  .flag{
+      background-image: url(./media/flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 159px;
+    height: 153px;
+    position: absolute;
+    left: 683px;
+    top: 228px;
+  }
+  .sun{
+      background-image: url(./media/sun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 1200px;
+    animation: sun 200s linear infinite;
+  }
+    @keyframes sun {
+   0%{
+            top: 60px;
+    left: 1200px;
+   } 
+   100%{
+            top: 60px;
+    left: 0px;
+   }
+  }
